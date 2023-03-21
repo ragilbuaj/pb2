@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayActivity">
+
+    <ImageView
+        android:id="@+id/ImgFoto"
+        android:layout_width="197dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/TVLamaPotong"
+        android:layout_width="171dp"
+        android:layout_height="43dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TVHarga"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/TVHarga"
+        app:layout_constraintTop_toBottomOf="@+id/TVHarga"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/TVHarga"
+        android:layout_width="169dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/TVStyle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/TVStyle"
+        app:layout_constraintTop_toBottomOf="@+id/TVStyle" />
+
+    <TextView
+        android:id="@+id/TVStyle"
+        android:layout_width="169dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="52dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/ImgFoto"
+        app:layout_constraintStart_toStartOf="@+id/ImgFoto"
+        app:layout_constraintTop_toBottomOf="@+id/ImgFoto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
